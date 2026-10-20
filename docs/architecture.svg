@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="100" y="105" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#0f172a">AI Inference Reliability Gate</text>
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="24" fill="#475569">SLO, capacity, cost, and fallback evidence before promotion</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="275" width="340" height="250" rx="26" fill="#ffffff" stroke="#bae6fd" stroke-width="4"/>
+    <text x="250" y="340" text-anchor="middle" font-size="29" font-weight="700" fill="#0f172a">Telemetry snapshot</text>
+    <text x="250" y="390" text-anchor="middle" font-size="21" fill="#475569">TTFT • latency • errors</text>
+    <text x="250" y="428" text-anchor="middle" font-size="21" fill="#475569">tokens/s • GPU • queue</text>
+    <text x="250" y="466" text-anchor="middle" font-size="21" fill="#475569">cost • fallback health</text>
+    <path d="M420 400 H565" stroke="#0ea5e9" stroke-width="7" fill="none" marker-end="url(#arrow)"/>
+    <rect x="580" y="215" width="440" height="370" rx="30" fill="#ecfeff" stroke="#0891b2" stroke-width="5"/>
+    <text x="800" y="295" text-anchor="middle" font-size="32" font-weight="700" fill="#164e63">Deterministic gate</text>
+    <text x="800" y="350" text-anchor="middle" font-size="22" fill="#155e75">validate evidence</text>
+    <text x="800" y="392" text-anchor="middle" font-size="22" fill="#155e75">compare versioned SLOs</text>
+    <text x="800" y="434" text-anchor="middle" font-size="22" fill="#155e75">calculate threshold ratios</text>
+    <text x="800" y="476" text-anchor="middle" font-size="22" fill="#155e75">recommend operator actions</text>
+    <rect x="665" y="515" width="270" height="46" rx="17" fill="#0f172a"/>
+    <text x="800" y="546" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">NO PRODUCTION MUTATION</text>
+    <path d="M1020 400 H1165" stroke="#0ea5e9" stroke-width="7" fill="none" marker-end="url(#arrow)"/>
+    <rect x="1180" y="275" width="340" height="250" rx="26" fill="#ffffff" stroke="#a7f3d0" stroke-width="4"/>
+    <text x="1350" y="340" text-anchor="middle" font-size="29" font-weight="700" fill="#0f172a">Decision evidence</text>
+    <text x="1350" y="395" text-anchor="middle" font-size="23" font-weight="700" fill="#047857">PASS • WARN • BLOCK</text>
+    <text x="1350" y="438" text-anchor="middle" font-size="20" fill="#475569">reasons • ratios • actions</text>
+    <text x="1350" y="475" text-anchor="middle" font-size="20" fill="#475569">audit fingerprint</text>
+    <rect x="300" y="690" width="1000" height="105" rx="25" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+    <text x="800" y="735" text-anchor="middle" font-size="24" font-weight="700" fill="#9a3412">Human approval or a controlled deployment system owns the final action</text>
+    <text x="800" y="772" text-anchor="middle" font-size="20" fill="#7c2d12">The gate provides evidence; it never scales, routes, or deploys production workloads</text>
+  </g>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#0ea5e9"/></marker></defs>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "policy": {
+    "policy_version": "2026-10-20",
+    "max_error_rate_pct": 1.0,
+    "max_p95_ttft_ms": 800,
+    "max_p95_e2e_ms": 4000,
+    "min_tokens_per_second": 35,
+    "max_gpu_utilization_pct": 90,
+    "max_gpu_memory_pct": 92,
+    "max_queue_depth": 50,
+    "max_cost_per_1k_tokens_usd": 0.025,
+    "min_request_count": 1000,
+    "require_fallback": true
+  },
+  "snapshot": {
+    "service": "support-assistant-v3",
+    "window_minutes": 60,
+    "request_count": 2500,
+    "error_rate_pct": 0.4,
+    "p95_ttft_ms": 620,
+    "p95_e2e_ms": 3200,
+    "tokens_per_second": 48,
+    "gpu_utilization_pct": 76,
+    "gpu_memory_pct": 81,
+    "queue_depth": 18,
+    "cost_per_1k_tokens_usd": 0.019,
+    "fallback_healthy": true,
+    "telemetry_complete": true
+  }
+}
